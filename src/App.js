@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-
+import Navbar from "./components/Navbar/Navbar";
+import Thebar from "./components/Thebar/Thebar";
+import Herosection from "./components/Herosection/Herosection";
+const data = require('./Json-folder/data.json');
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      {data.data.map(item => {
+        return(<Herosection
+          key={item.id}
+          dir={item.dir} 
+          img={{...item.img}} 
+          content={{...item.content}} 
+          pur={item.pur}
+          someLink={item.someLink}
+          img={item.img}
+          logos={{...item.logos}}
+          />);
+      })}
+      <Thebar />
     </div>
   );
 }

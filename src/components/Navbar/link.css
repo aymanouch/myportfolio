@@ -1,0 +1,46 @@
+ul.list-menu{
+    padding:0;
+    margin:0;
+    list-style:none;
+    font-family: 'Marvel', sans-serif;
+    width:70%;
+    display:flex;
+    justify-content: flex-end;
+
+
+}
+
+ul.list-menu li{
+    font-size:30px;
+    cursor: pointer;
+    padding:14px 16px;
+    line-height:71px;
+    position: relative;
+}
+ul.list-menu li span{
+    width:0%;
+    height:2px;
+    background:#F6416C;
+    position: absolute;
+    bottom:0;
+    left:0;
+    display: block;
+    transition:width .5s ease;
+}
+ul.list-menu li:hover span{
+    width:100%;
+}
+
+@media screen and (max-width:991px) {
+    ul.list-menu{
+        width: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 100px;
+        text-align: center;
+        height:0;
+        overflow: hidden;
+        background:#fff;
+    }
+}

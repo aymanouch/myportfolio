@@ -1,0 +1,13 @@
+.container-flex__hero {
+    display: flex;
+    width: 100%;
+    height:90vh; /*for desktop */
+    flex-wrap:wrap;
+}
+
+
+@media screen and (max-width:991px) {
+    .container-flex__hero{
+        height: auto; /*for small screen */
+    }
+}

@@ -1,0 +1,14 @@
+.parag{
+    font-weight: 100;
+    font-size: 24px;
+    color:#6b6b6b;
+}
+.parag.big-para__height{
+    padding-right: 200px;
+    line-height: 44px;
+}
+@media screen and (max-width:991px) {
+    .parag.big-para__height{
+        padding-right: 0;
+    }
+}

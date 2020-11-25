@@ -1,0 +1,47 @@
+.some-link{
+    padding:32px 0 0 0; 
+}
+.some-link button{
+    background:none;
+    border:none;
+    outline: none;
+    color:#00B8A9;
+    font-size:32px;
+    height: 60px;
+    line-height:60px;
+    cursor: pointer;
+
+}
+.some-link button .cont-span{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.some-link button .cont-span svg{
+    margin-right: 16px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-66%);
+}
+
+.some-link button .cont-span .red-line{
+    display:inline-block;
+    width:100%;
+    height: 4px;
+    background:#f6416c; 
+    position: absolute;
+    top:50%;
+    left: 105%;
+}
+@media screen and (max-width:991px) {
+    .some-link button .cont-span .red-line{
+        width:100px;
+    }
+}
+@media screen and (max-width:300px) {
+    .some-link button .cont-span .red-line{
+        width:50px;
+    }
+}

@@ -1,0 +1,18 @@
+.text-box__text{
+    width:50%;
+}
+.text-box__text.maxwidth{
+    width:100%;
+}
+.text-box__text.maxwidth .container-text__flex{
+    display: flex;
+}
+.text-box__text.maxwidth .itme-text__textbox{
+    width: 50%;
+}
+
+@media screen and (max-width:991px) {
+    .text-box__text{
+        width:100%;
+    }
+}
