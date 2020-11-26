@@ -19,6 +19,7 @@ function App() {
           img={item.img}
           logos={{...item.logos}}
           statique={{...item.statique}}
+          card={{...item.card}}
           />);
       })}
       <Thebar />

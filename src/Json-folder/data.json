@@ -69,7 +69,10 @@
                 },
                 "exist":false
             },
-            "pur":true
+            "pur":true,
+            "card":{
+                "statu":true
+            }
         }
     ]
 }
