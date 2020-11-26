@@ -43,4 +43,9 @@ ul.list-menu li:hover span{
         overflow: hidden;
         background:#fff;
     }
+    ul.list-menu li{
+        padding: 6px 0;
+        font-size:24px;
+        line-height: 50px;
+    }
 }
