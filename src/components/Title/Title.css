@@ -12,9 +12,21 @@
  color:#fff;
  background: #f6416c;
 }
+.complexe-title h1{
+    font-weight: bold;
+    font-size:48px;
+    text-transform:capitalize;
+    padding-right: 500px;
+    margin: 24px 0;
+    
+}
 @media screen and (max-width:991px) {
     .bigbig h1{
         font-size:90px;
+    }
+    .complexe-title h1{
+        padding: 0;
+        font-size:40px;
     }
 }
 @media screen and (max-width:600px) {

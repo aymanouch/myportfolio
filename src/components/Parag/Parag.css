@@ -7,8 +7,40 @@
     padding-right: 200px;
     line-height: 44px;
 }
+.parag.with-title{
+    padding: 0 0 0 80px;
+    position: relative;
+    
+}
+.parag.with-title h2{
+    position: absolute;
+    left: -6%;
+    transform: rotate(-90deg) translateX(15%);
+    color:#00B8A9;
+    top:50%;
+    font-size:32px;
+    text-transform: uppercase;
+    padding: 8px 0;
+}
+.parag.with-title h2::after{
+    content:"";
+    position: absolute;
+    width:80%;
+    height:2px;
+    background:#F6416C;
+    bottom:0;
+    right: 0;
+}
+.parag.with-title p{
+    line-height: 50px;
+}
 @media screen and (max-width:991px) {
     .parag.big-para__height{
         padding-right: 0;
+    }
+    .parag.with-title h2{
+        top:10%;
+        left:-8%;
+        transform: translateX(0) rotate(-90deg);
     }
 }

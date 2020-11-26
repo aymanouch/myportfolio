@@ -8,7 +8,7 @@
 .logos-container .cont-logo{
     width:200px;
     height:150px;
-    padding: 32px 32px;
+    padding: 32px;
     line-height: 150px;
 }
 .logos-container .cont-logo img{
@@ -18,5 +18,12 @@
 @media screen and (max-width:991px) {
     .logos-container .cont-logo{
         text-align:center;
+    }
+}
+@media screen and (max-width:450px) {
+    .logos-container .cont-logo{
+        padding: 16px;
+        width:150px;
+        height:100px;
     }
 }
