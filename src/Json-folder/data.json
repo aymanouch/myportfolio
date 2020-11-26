@@ -33,7 +33,7 @@
             "content":{
                 "bigbig":false,
                 "bigTitle":"I am a creative developer",
-                "otherTitle":"devloper",
+                "otherTitle":"",
                 "smallTitle":"aboute me",
                 "parag":"hi my name is ayman ouchedih, i am a front-End developer, I enjoy Building website or web app. if you need some website or web app for your business you are in the right place just get in touch with me now. ",
                 "simpleTitle":false
@@ -46,10 +46,30 @@
                 "exist":true
             },
             "pur":false,
-            "logos":{
-                "statu":false
-                
+            "statique":{
+                "statu":true
             }
+        },
+        {
+            "id":3,
+            "name":"services",
+            "dir":true,
+            "content":{
+                "bigbig":false,
+                "bigTitle":"The great services I provide",
+                "otherTitle":"",
+                "smallTitle":"services",
+                "parag":"hi my name is ayman ouchedih, i am a front-End developer, I enjoy Building website or web app. if you need some website or web app for your business you are in the right place just get in touch with me now. ",
+                "simpleTitle":true
+            },
+            "img":{
+                "img":{
+                    "name" :"",
+                    "src":""
+                },
+                "exist":false
+            },
+            "pur":true
         }
     ]
 }

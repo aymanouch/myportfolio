@@ -18,6 +18,7 @@ function App() {
           someLink={item.someLink}
           img={item.img}
           logos={{...item.logos}}
+          statique={{...item.statique}}
           />);
       })}
       <Thebar />

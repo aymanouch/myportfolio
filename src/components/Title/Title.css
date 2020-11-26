@@ -20,6 +20,18 @@
     margin: 24px 0;
     
 }
+.simple-title h1{
+    font-weight: bold;
+    font-size:48px;
+    text-transform:capitalize;
+    padding-left: 50px;
+    border-left:3px solid #f6416c;
+}
+.simple-title h1 span{
+    color: #00B8A9;
+    font-size: 32px;
+    text-transform: uppercase;
+}
 @media screen and (max-width:991px) {
     .bigbig h1{
         font-size:90px;

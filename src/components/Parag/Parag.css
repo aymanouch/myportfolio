@@ -34,6 +34,10 @@
 .parag.with-title p{
     line-height: 50px;
 }
+.simple-parag__parag {
+    line-height: 40px;
+    padding-top:32px;
+}
 @media screen and (max-width:991px) {
     .parag.big-para__height{
         padding-right: 0;

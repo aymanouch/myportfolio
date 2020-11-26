@@ -3,6 +3,7 @@ import TextBox from '../TextBox/TextBox';
 import ImageSh from '../ImageSh/ImageSh';
 import Logos from '../Logos/Logos';
 import './Herosection.css';
+import Statique from '../Statique/Statique';
 const Herosection = (props) => {
       
     return(<div className="herosection">
@@ -14,8 +15,10 @@ const Herosection = (props) => {
                            someLink={props.someLink}
                            />
                            {props.img.exist&&<ImageSh img={{...props.img.img}} statu={true}/>}
+                           {props.statique.statu&&<Statique />}
                     </div>
                     {props.logos.statu&&<Logos logos={{...props.logos}}/>}
+                    
                </div>
                
         </div>);
