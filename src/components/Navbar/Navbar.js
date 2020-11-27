@@ -22,11 +22,13 @@ const [toggeleMenu, setToggelMenu] = useState(false);
     return (<div className="navbar">
                 <div className="container">
                     <div className="flex-navbar">
-                    <Logo />
+                    <div className="cont-logo__navbar center-left black-back"><Logo /></div>
+                    <div className="cont-list__navbar center-right white-back">
                     <Links show={toggeleMenu}/>
-                    {showMenu&&<div className="icon-menu" onClick={()=> {setToggelMenu(!toggeleMenu)}}>
+                    </div>
+                    <div className="cont-icon__navbar center-right">{showMenu&&<div className="icon-menu" onClick={()=> {setToggelMenu(!toggeleMenu)}}>
                                 <IconBtn value={toggeleMenu} />
-                        </div>}
+                        </div>}</div>
                     </div>
                 </div>
           </div>);

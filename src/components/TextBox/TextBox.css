@@ -11,8 +11,13 @@
 .text-box__text.maxwidth .itme-text__textbox{
     width: 50%;
 }
-
+.pad-text__text{
+    padding: 40px 0 0 80px;
+}
 @media screen and (max-width:991px) {
+    .pad-text__text{
+        padding:0;
+    }
     .text-box__text{
         width:100%;
     }

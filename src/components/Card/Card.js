@@ -3,7 +3,7 @@ import './Card.css';
 import {FaGem, FaCode} from 'react-icons/fa';
 
 function Card(props) {
-    return (<div className="container-crad__card">
+    return (<div className="container-crad__card center-left center-right">
             <div className="card-box__card">
                   <div className="container--align__card">
                   <div className="icon-cont">

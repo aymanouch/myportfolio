@@ -10,4 +10,7 @@
     .container-image{
         width:100%;
     }
+    .about-image{
+        height: 200px;
+    }
 }

@@ -4,9 +4,9 @@ import Title from '../Title/Title';
 import SomeLink from '../SomeLink/SomeLink';
 import "./TextBox.css";
 const TextBox = (props) => {
-    return(
-        <div className={`text-box__text ${props.pur? 'maxwidth' : ''}`}>
-            <div className={`container-text__flex`} >
+    return( 
+        <div className={`text-box__text ${props.alignCenter} ${props.pur? 'maxwidth center-left center-right' : ''} ${props.id===1 ? "black-back" : ""}`}>
+            <div className={`container-text__flex ${props.id===2 ? 'pad-text__text' : ""}`} >
                  <div className="itme1 itme-text__textbox">
                 <Title 
                  bigbig={props.content.bigbig} 

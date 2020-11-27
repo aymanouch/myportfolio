@@ -3,20 +3,33 @@
     justify-content:space-between;
     align-items: center;
 }
-.navbar .logo{
-    width:15%;
+.navbar .cont-logo__navbar{
+    width:50%;
     line-height:100px;
 }
-
+.navbar .cont-list__navbar{
+    width:50%
+}
+.navbar .cont-icon__navbar{
+    display: none;
+}
 @media screen and (max-width:991px) {
     .navbar{
         background:#fff;
     }
-    .navbar .logo{
+    .navbar .cont-icon__navbar{
         width:50%;
+        display: block;
+    }
+    .navbar .cont-icon__navbar .icon-menu{
+        float: right;
     }
     .icon-menu{
         font-size:30px;
         cursor: pointer;
     }
+    .navbar .cont-list__navbar{
+        width:0;
+    }
+    
 }

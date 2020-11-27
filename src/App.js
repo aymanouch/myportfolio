@@ -20,9 +20,9 @@ function App() {
           logos={{...item.logos}}
           statique={{...item.statique}}
           card={{...item.card}}
+          id={item.id}
           />);
       })}
-      <Thebar />
     </div>
   );
 }

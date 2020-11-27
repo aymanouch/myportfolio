@@ -6,9 +6,11 @@
 body{
   height: 2000px;
 }
-.container{
-  width:90%;
-  margin: auto;
+.center-left{
+   padding-left:10em;
+}
+.center-right{
+  padding-right: 10em;
 }
 .ninuto{
   font-family: 'Nunito', sans-serif;
@@ -18,4 +20,23 @@ body{
 }
 .signika{
   font-family: 'Signika Negative', sans-serif;
+}
+.black-back{
+  background:#000;
+  color:#fff;
+}
+.white-back{
+  background:#fff;
+  color:#000;
+}
+@media screen and (max-width:991px) {
+
+ .center-left{
+  padding-left:2em;
+  padding-right: 2em;
+}
+.center-right{
+  padding-left:2em;
+  padding-right: 2em;
+}
 }

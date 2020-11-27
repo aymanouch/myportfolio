@@ -3,7 +3,7 @@ ul.list-menu{
     margin:0;
     list-style:none;
     font-family: 'Marvel', sans-serif;
-    width:70%;
+    width:100%;
     display:flex;
     justify-content: flex-end;
 
@@ -11,10 +11,10 @@ ul.list-menu{
 }
 
 ul.list-menu li{
-    font-size:30px;
+    font-size:24px;
     cursor: pointer;
     padding:14px 16px;
-    line-height:71px;
+    line-height:72px;
     position: relative;
 }
 ul.list-menu li span{
