@@ -55,6 +55,9 @@ footer .right-side__footer ul li svg{
 }
 
 @media screen and (max-width:991px) {
+    footer{
+        height: 400px;
+    }
     footer .left-side__footer{
         width:90%;
     }
@@ -67,5 +70,9 @@ footer .right-side__footer ul li svg{
     }
     footer .form-parte__footer button{
         margin: 16px 0 0 0;
+    }
+    footer .form-parte__footer input{
+        font-size: 16px;
+        width: 230px;
     }
 }
