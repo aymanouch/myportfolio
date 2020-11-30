@@ -97,7 +97,11 @@
                 "exist":true,
                 "statu":false
             },
-            "pur":false
+            "pur":false,
+            "person":{
+                "name":"jack vanmain",
+                "job":"SEO OF COMPANY STOLZ"
+            }
             
         },
         {
@@ -120,7 +124,11 @@
                 "exist":true,
                 "statu":false
             },
-            "pur":false
+            "pur":false,
+            "person":{
+                "name":"mohamed khalili",
+                "job":"Electronic merchant"
+            }
             
         }
     ]

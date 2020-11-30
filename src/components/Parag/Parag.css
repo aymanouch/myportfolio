@@ -27,7 +27,7 @@
     position: absolute;
     width:80%;
     height:2px;
-    background:#F6416C;
+    background:#000;
     bottom:0;
     right: 0;
 }
@@ -37,6 +37,12 @@
 .simple-parag__parag {
     line-height: 40px;
     padding-top:32px;
+}
+.testimonails--person{
+    padding: 40px 0 40px 24px;
+}
+.testimonails--person h3{
+    color: #000;
 }
 @media screen and (max-width:991px) {
     .parag.big-para__height{

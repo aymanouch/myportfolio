@@ -15,6 +15,7 @@ const Herosection = (props) => {
                            content={{...props.content}}
                            someLink={props.someLink}
                            alignCenter={props.dir ? "center-left" : "center-right"}
+                           person={props.person}
                            />
                            {/* add the images side  */}
                            {props.img.exist&&<ImageSh img={{...props.img.img}} statu={props.img.statu} alignCenter={!props.dir ? "center-left" : "center-right"} id={props.id}/>}

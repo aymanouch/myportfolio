@@ -12,7 +12,7 @@ function Card(props) {
                    <div className="title-card__card">
                        <h2 className="marvel">design</h2>
                    </div>
-                   <div className="prag-cont__card">
+                   <div className="prag-cont__card signika">
                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
                    </div>
                   </div>
@@ -25,7 +25,7 @@ function Card(props) {
                    <div className="title-card__card">
                        <h2 className="marvel">development</h2>
                    </div>
-                   <div className="prag-cont__card">
+                   <div className="prag-cont__card signika">
                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
                    </div></div> 
             </div>

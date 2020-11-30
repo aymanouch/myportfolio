@@ -12,13 +12,12 @@
 .container-crad__card .card-box__card{
     width:420px;
     height:500px;
-    background:#FFDE7D4F;
+    background:#000;
     margin-right:400px;
     border-radius:3px;
 }
 .container-crad__card .card-box__card:last-child{
     margin:0;
-    background:#F6416C5E;
 }
 
 .container-crad__card .card-box__card .icon-cont{
@@ -31,13 +30,15 @@
 .container-crad__card .card-box__card .title-card__card h2{
     margin: 8px 0 24px 0;
     font-size: 40px;
+    color:#fff;
 }
 .container-crad__card .card-box__card .prag-cont__card p{
     font-weight: 100;
     font-size: 18px;
-    color: #6b6b6b;
-    font-size: ;
+    color:#c1c1c1;
+    font-size:20px ;
     line-height: 36px;
+    padding-top:40px;
 }
 @media screen and (max-width:991px) {
     .container-crad__card .card-box__card{

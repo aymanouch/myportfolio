@@ -13,13 +13,15 @@ const TextBox = (props) => {
                  smallTitle={props.content.smallTitle} 
                  bigTitle={props.content.bigTitle}
                  otherTitle={props.content.otherTitle}
-                 simpleTitle={props.content.simpleTitle} />
+                 simpleTitle={props.content.simpleTitle} 
+                 />
                  </div>
                  <div className="itme2 itme-text__textbox">
                      <Parag simpleTitle={props.content.simpleTitle} 
                      bigbig={props.content.bigbig} 
                      smallTitle={props.content.smallTitle} 
-                     parag={props.content.parag}/></div>
+                     parag={props.content.parag}
+                     person={props.person}/></div>
             </div>
             
             {props.someLink&&<SomeLink />}
