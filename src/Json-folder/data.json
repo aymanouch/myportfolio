@@ -21,11 +21,7 @@
                 "statu":true
             },
             "pur":false,
-            "someLink":true,
-            "logos":{
-                "statu":true,
-                "logosImg":["logo-01.svg", "logo-02.svg","logo-03.svg","logo-04.svg","logo-05.svg","logo-06.svg","logo-07.svg","logo-08.svg","logo-09.svg","logo-10.svg"]
-            }
+            "someLink":true
         },
         {
             "id":2,
@@ -79,6 +75,30 @@
         },
         {
             "id":4,
+            "name":"works",
+            "dir":true,
+            "content":{
+                "bigbig":false,
+                "bigTitle":"Great projects Who created it",
+                "otherTitle":"",
+                "smallTitle":"PROJECTS",
+                "parag":"That's just some of my modest work in design and development, i wish you like it and Enjoy your time. ",
+                "simpleTitle":true
+            },
+            "img":{
+                "img":{},
+                "exist":false
+            },
+            "pur":true,
+            "works":[
+                {"name":"store for perfum", "descri":"this is a web application for store ", "imgs":["./images/work01.png"], "link":""},
+                {"name":"stoz comany", "descri":"website for a comany named stolz", "imgs":["./images/work02.jpg"], "link":""},
+                {"name":"web app for store", "descri":"web app It is an online store", "imgs":["./images/work03.png"], "link":""}
+            ]
+            
+        },
+        {
+            "id":5,
             "name":"testimonials",
             "dir":false,
             "content":{
@@ -86,7 +106,7 @@
                 "bigTitle":"The great services I provide",
                 "otherTitle":"",
                 "smallTitle":"testimonials",
-                "parag":"hi my name is ayman ouchedih, i am a front-End developer, I enjoy Building website or web app. if you need some website or web app for your business you are in the right place just get in touch with me now. ",
+                "parag":"Hi, my name is jack vanmain. I work with Ayman, he is an amazing guy doing the hard work for finishing his job.",
                 "simpleTitle":false
             },
             "img":{
@@ -105,7 +125,7 @@
             
         },
         {
-            "id":5,
+            "id":6,
             "name":"testimonials",
             "dir":false,
             "content":{

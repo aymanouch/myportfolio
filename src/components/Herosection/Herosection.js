@@ -1,7 +1,7 @@
 import React from 'react';
 import TextBox from '../TextBox/TextBox';
 import ImageSh from '../ImageSh/ImageSh';
-import Logos from '../Logos/Logos';
+import GalaryWork from  '../GalaryWork/GalaryWork';
 import './Herosection.css';
 import Statique from '../Statique/Statique';
 import Card from '../Card/Card';
@@ -22,6 +22,7 @@ const Herosection = (props) => {
                            {/*add some feature to a special section  */}
                            {props.statique.statu&&<Statique />}
                            {props.card.statu&&<Card />}
+                           {props.works&&<GalaryWork works={props.works}/>}
                     </div>
                      
                </div>

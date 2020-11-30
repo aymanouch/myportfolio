@@ -45,4 +45,7 @@
         width:100%;
         margin:0 0 16px 0;
     }
+    .container-crad__card .card-box__card .prag-cont__card p{
+        padding-top:16px;
+    }
 }

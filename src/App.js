@@ -32,13 +32,14 @@ function App() {
             pur={item.pur}
             someLink={item.someLink}
             img={item.img}
-            logos={{...item.logos}}
             statique={{...item.statique}}
             card={{...item.card}}
             id={item.id}
+            works={item.works}
             />);
         } 
       })}
+      {/* testimonials parte  */}
       <div className="cont-slider__item">  
       <Slider {...settings} >
       {data.data.map(item => {
@@ -51,11 +52,11 @@ function App() {
             pur={item.pur}
             someLink={item.someLink}
             img={item.img}
-            logos={{...item.logos}}
             statique={{...item.statique}}
             card={{...item.card}}
             id={item.id}
             person={item.person}
+            works={undefined}
             />);
         } 
       })}
