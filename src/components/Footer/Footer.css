@@ -1,0 +1,71 @@
+footer{
+    height:50vh;
+    display: flex;
+}
+footer .left-side__footer{
+   position: relative;
+   width:70%;
+   background-color: #000;
+   color:#fff;
+   border-top-right-radius: 24px;
+   padding-top:40px;
+   overflow: hidden;
+}
+footer .left-side__footer > div{
+    padding-bottom:40px;
+}
+footer .form-parte__footer {
+    display: flex;
+}
+
+footer .form-parte__footer input{
+    width:300px;
+    padding:12px 8px;
+    border:none;
+    border-radius: 4px;
+    background-color: #202020;
+    color:#bdbdbd;
+    font-size: 18px;
+}
+footer .form-parte__footer button{
+    margin-left: 8px;
+}
+footer .left-side__footer .copy-parte__footer{
+    color:#979797
+}
+footer .right-side__footer{
+    width:30%;
+}
+footer .right-side__footer ul{
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    height: 100%;
+}
+footer .right-side__footer ul li{
+    width:100%;
+}
+footer .right-side__footer ul li a{
+    color:#000;
+}
+footer .right-side__footer ul li svg{
+    font-size:30px;
+}
+
+@media screen and (max-width:991px) {
+    footer .left-side__footer{
+        width:90%;
+    }
+    footer .right-side__footer{
+        width:20%;
+        padding-left:8px;
+    }
+    footer .form-parte__footer{
+        flex-wrap: wrap;
+    }
+    footer .form-parte__footer button{
+        margin: 16px 0 0 0;
+    }
+}

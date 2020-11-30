@@ -30,13 +30,19 @@ body{
   color:#000;
 }
 .slick-next {
-  right: 45%;
+  right: 40%;
   color: black;
+  width:auto;
+  height: auto;
+  font-size:50px;
 }
 .slick-prev {
   left:50%;
   color: black;
   z-index: 9;
+  width:auto;
+  height: auto;
+  font-size:50px;
 }
 .slick-next:hover,
 .slick-prev:hover{

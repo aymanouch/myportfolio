@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Herosection from "./components/Herosection/Herosection";
 import Slider from "react-slick";
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import Footer from './components/Footer/Footer';
 
 const data = require('./Json-folder/data.json');
 function App() {
@@ -62,6 +63,7 @@ function App() {
       })}
       </Slider>
       </div>
+      <Footer />
     </div>
   );
 }
