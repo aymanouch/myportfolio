@@ -29,6 +29,21 @@ body{
   background:#fff;
   color:#000;
 }
+.slick-next {
+  right: 45%;
+  color: black;
+}
+.slick-prev {
+  left:50%;
+  color: black;
+  z-index: 9;
+}
+.slick-next:hover,
+.slick-prev:hover{
+  color:black;
+}
+
+/* start media query */
 @media screen and (max-width:991px) {
 
  .center-left{
@@ -38,5 +53,12 @@ body{
 .center-right{
   padding-left:2em;
   padding-right: 2em;
+}
+.slick-next {
+  left: 20%;
+  
+}
+.slick-prev {
+  left:5%;
 }
 }

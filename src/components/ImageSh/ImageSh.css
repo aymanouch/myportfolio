@@ -5,12 +5,32 @@
      max-width: 100%;
      max-height:100%;
 }
-
+.image-wrapper_tow{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.image-wrapper_tow img:first-child{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+}
+.image-wrapper_tow img:last-child{
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    right: 10%;
+    top: 5%;
+}
 @media screen and (max-width:991px) {
     .container-image{
         width:100%;
     }
     .about-image{
         height: 200px;
+    }
+    .image-wrapper_tow{
+        height:80vh;
+        padding-top: 70px;
     }
 }

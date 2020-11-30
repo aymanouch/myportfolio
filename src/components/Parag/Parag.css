@@ -44,7 +44,7 @@
     }
     .parag.with-title h2{
         top:10%;
-        left:-8%;
+        left:-15%;
         transform: translateX(0) rotate(-90deg);
     }
 }

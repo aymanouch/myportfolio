@@ -17,7 +17,8 @@
                     "name" :"laptop",
                     "src":"./images/svg-01.svg"
                 },
-                "exist":true
+                "exist":true,
+                "statu":true
             },
             "pur":false,
             "someLink":true,
@@ -43,7 +44,8 @@
                     "name" :"devlopment",
                     "src":"./images/svg-02.svg"
                 },
-                "exist":true
+                "exist":true,
+                "statu":true
             },
             "pur":false,
             "statique":{
@@ -67,12 +69,59 @@
                     "name" :"",
                     "src":""
                 },
-                "exist":false
+                "exist":false,
+                "statu":true
             },
             "pur":true,
             "card":{
                 "statu":true
             }
+        },
+        {
+            "id":4,
+            "name":"testimonials",
+            "dir":false,
+            "content":{
+                "bigbig":false,
+                "bigTitle":"The great services I provide",
+                "otherTitle":"",
+                "smallTitle":"testimonials",
+                "parag":"hi my name is ayman ouchedih, i am a front-End developer, I enjoy Building website or web app. if you need some website or web app for your business you are in the right place just get in touch with me now. ",
+                "simpleTitle":false
+            },
+            "img":{
+                "img":{
+                    "name" :["pattern", "testimonial"],
+                    "src":["./images/patternpad.svg", "./images/human01.jpg"]
+                },
+                "exist":true,
+                "statu":false
+            },
+            "pur":false
+            
+        },
+        {
+            "id":5,
+            "name":"testimonials",
+            "dir":false,
+            "content":{
+                "bigbig":false,
+                "bigTitle":"The great services I provide",
+                "otherTitle":"",
+                "smallTitle":"testimonials",
+                "parag":"hi my name is ayman ouchedih, i am a front-End developer, I enjoy Building website or web app. if you need some website or web app for your business you are in the right place just get in touch with me now. ",
+                "simpleTitle":false
+            },
+            "img":{
+                "img":{
+                    "name" :["pattern", "testimonial"],
+                    "src":["./images/patternpad.svg", "./images/human02.jpg"]
+                },
+                "exist":true,
+                "statu":false
+            },
+            "pur":false
+            
         }
     ]
 }

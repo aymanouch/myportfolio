@@ -17,7 +17,7 @@ const Herosection = (props) => {
                            alignCenter={props.dir ? "center-left" : "center-right"}
                            />
                            {/* add the images side  */}
-                           {props.img.exist&&<ImageSh img={{...props.img.img}} statu={true} alignCenter={!props.dir ? "center-left" : "center-right"} id={props.id}/>}
+                           {props.img.exist&&<ImageSh img={{...props.img.img}} statu={props.img.statu} alignCenter={!props.dir ? "center-left" : "center-right"} id={props.id}/>}
                            {/*add some feature to a special section  */}
                            {props.statique.statu&&<Statique />}
                            {props.card.statu&&<Card />}
