@@ -62,12 +62,12 @@ body{
 }
 .slick-next {
   left: 20%; 
-  top:95%;
+  top:30%;
   
   
 }
 .slick-prev {
   left:5%;
-  top:95%;
+  top:30%;
 }
 }
