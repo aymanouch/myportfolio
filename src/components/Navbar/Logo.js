@@ -5,7 +5,7 @@ import gsap from 'gsap';
       gsap.from('.logo',{x:-100, duration:1});
      }, [])
      return(<div className="logo">
-               aymanouch
+               <img src="./images/logo.png" alt="aymanouch" />
             </div>);
  }
 

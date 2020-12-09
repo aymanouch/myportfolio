@@ -26,6 +26,7 @@ function App() {
       {data.data.map(item => {
         if(item.name!=="testimonials") {
           return(<Herosection
+            name={item.name}
             key={item.id}
             dir={item.dir} 
             img={{...item.img}} 
@@ -46,6 +47,7 @@ function App() {
       {data.data.map(item => {
         if(item.name==="testimonials") {
           return(<Herosection
+            name={item.name}
             key={item.id}
             dir={item.dir} 
             img={{...item.img}} 
