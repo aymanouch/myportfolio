@@ -15,12 +15,16 @@ function Footer() {
 
     })
     const fadeFooIn = () => {
-        console.log('footer fade in');
+        gsap.to('footer .cont-logo__footer', {x:0, opacity:1,rotation:0, duration:1.5});
+        gsap.to('footer .form-parte__footer button', {x:0, opacity:1});
+        gsap.to('footer .form-parte__footer input', {y:0, opacity:1});
         gsap.to(".cont-list__socialmedia li", {x:0, opacity:1, stagger:.5});
         
     },
     fadeFooOut = () => {
-        console.log('fade footer out');
+        gsap.to('footer .cont-logo__footer', {x:50, opacity:0,rotation:-45});
+        gsap.to('footer .form-parte__footer button', {x:50, opacity:0});
+        gsap.to('footer .form-parte__footer input', {y:-50, opacity:0});
         gsap.to(".cont-list__socialmedia li", {x:200, opacity:0, stagger:.5});
     }
 intersection && intersection.intersectionRatio > pencentage
@@ -29,7 +33,9 @@ intersection && intersection.intersectionRatio > pencentage
        return(<footer className="footer" ref={footerRef}>
            <div className="left-side__footer center-left">
                   <div className="logo-parte__footer">
-                         <h1>aymanouch</h1>
+                         <div className="cont-logo__footer">
+                             <img src="./images/logo.png" alt="aymanouchedih" />
+                         </div>
                   </div>
                   <div className="form-parte__footer">
                       <form id="myForm">
