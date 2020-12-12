@@ -43,6 +43,7 @@ footer .right-side__footer ul{
     flex-wrap:wrap;
     align-items: center;
     height: 100%;
+    overflow: hidden;
 }
 footer .right-side__footer ul li{
     width:100%;

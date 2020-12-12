@@ -1,9 +1,31 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import './Card.css';
 import {FaGem, FaCode} from 'react-icons/fa';
-
-function Card(props) {
-    return (<div className="container-crad__card center-left center-right">
+import gsap from "gsap";
+import {useIntersection} from "react-use";
+function Card() {
+    const pencentage = window.innerWidth >= 991 ? 0.2 : 0.15;
+       const cardRef = useRef(null);
+       const intersection = useIntersection(cardRef, {
+             root:null,
+             rootMargin:"150px",
+             threshold:pencentage
+       });
+       //create a functions for generate the scroll effect
+       const fadeOut = () => {
+              if(cardRef.current!==null) {
+                     gsap.to(".container-crad__card", {y:0, opacity:1,stagger:.2});
+              }
+       }
+       const fadeIn= () => {
+              if(cardRef.current!==null) {
+                     gsap.to(".container-crad__card", {y:300, opacity:0, stagger:.3});
+              }
+       }
+intersection && intersection.intersectionRatio <= pencentage
+? fadeIn()
+: fadeOut();
+    return (<div className="container-crad__card center-left center-right" ref={cardRef}>
             <div className="card-box__card">
                   <div className="container--align__card">
                   <div className="icon-cont">

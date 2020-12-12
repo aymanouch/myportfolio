@@ -1,10 +1,32 @@
 import { Button } from "@material-ui/core";
-import React from "react";
+import React, {useRef} from "react";
 import './Footer.css';
 import {FaFacebook, FaGithub, FaInstagram, FaTwitter} from "react-icons/fa";
 import $ from "jquery";
+import gsap from "gsap";
+import {useIntersection} from "react-use";
 function Footer() {
-       return(<footer className="">
+    const footerRef = useRef(null),
+    pencentage = window.innerWidth >= 991 ? 0.2 : 0.15,
+    intersection = useIntersection(footerRef, {
+        root:null,
+        rootMargin:'0px',
+        threshold:pencentage
+
+    })
+    const fadeFooIn = () => {
+        console.log('footer fade in');
+        gsap.to(".cont-list__socialmedia li", {x:0, opacity:1, stagger:.5});
+        
+    },
+    fadeFooOut = () => {
+        console.log('fade footer out');
+        gsap.to(".cont-list__socialmedia li", {x:200, opacity:0, stagger:.5});
+    }
+intersection && intersection.intersectionRatio > pencentage
+? fadeFooIn()
+: fadeFooOut();
+       return(<footer className="footer" ref={footerRef}>
            <div className="left-side__footer center-left">
                   <div className="logo-parte__footer">
                          <h1>aymanouch</h1>
@@ -25,7 +47,7 @@ function Footer() {
                   </div>
            </div>
            <div className="right-side__footer center-right">
-               <ul>
+               <ul className="cont-list__socialmedia">
                    <li><a target="_blank" href="https://wwww.facebook.com"><FaFacebook /></a></li>
                    <li><a target="_blank" href="https://wwww.instagram.com"><FaInstagram /></a></li>
                    <li><a target="_blank" href="https://wwww.twitter.com"><FaTwitter /></a></li>
