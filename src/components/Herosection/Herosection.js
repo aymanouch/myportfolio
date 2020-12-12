@@ -8,29 +8,29 @@ import Card from '../Card/Card';
 import { useIntersection } from "react-use";
 import gsap from "gsap";
 const Herosection = (props) => {
+       const pencentage = window.innerWidth >= 991 ? 0.2 : 0.15;
        const sectionRef = useRef(null);
        const intersection = useIntersection(sectionRef, {
              root:null,
              rootMargin:"0px",
-             threshold:0.5
+             threshold:pencentage
        });
        //create a function test fadeout for testing useintersection 
        const fadeOut = () => {
-              console.log(sectionRef.current);
               if(sectionRef.current!==null) {
-                     gsap.to(sectionRef.current, {x:100});
+                     gsap.to(sectionRef.current, {x:0, opacity:1});
               }
        }
        const fadeIn= () => {
               if(sectionRef.current!==null) {
-                     gsap.to(sectionRef.current, {x:0});
+                     gsap.to(sectionRef.current, {x:-100, opacity:0});
               }
        }
-intersection && intersection.intersectionRatio < 0.5
+intersection && intersection.intersectionRatio <= pencentage
 ? fadeIn()
 : fadeOut();
-    return(<div className="herosection" ref={props.name!=="home" ? sectionRef : null}>
-               <div className="container">
+    return(<div className="herosection">
+               <div className="container" ref={props.name!=="home" ? sectionRef : null}>
                     <div className="container-flex__hero" style={{flexDirection: props.dir ? 'row' : 'row-reverse', alignContent: props.card.statu ? 'flex-start' : ''}}>
                            <TextBox 
                            id={props.id}
