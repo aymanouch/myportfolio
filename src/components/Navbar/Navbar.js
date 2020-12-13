@@ -19,12 +19,17 @@ const [toggeleMenu, setToggelMenu] = useState(false);
             setToggelMenu(false);
         }
     });
+function handleLinkClick() {
+         if(window.innerWidth <=991) {
+             setToggelMenu(false);
+         }
+}
     return (<div className="navbar">
                 <div className="container">
                     <div className="flex-navbar">
                     <div className="cont-logo__navbar center-left black-back"><Logo /></div>
                     <div className="cont-list__navbar center-right white-back">
-                    <Links show={toggeleMenu}/>
+                    <Links show={toggeleMenu} handleClick={() => {handleLinkClick()}}/>
                     </div>
                     <div className="cont-icon__navbar center-right">{showMenu&&<div className="icon-menu" onClick={()=> {setToggelMenu(!toggeleMenu)}}>
                                 <IconBtn value={toggeleMenu} />

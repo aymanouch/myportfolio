@@ -53,7 +53,7 @@ intersection && intersection.intersectionRatio <= pencentage
 intersection1 && intersection1.intersectionRatio < pencentage 
 ? fadeCardIn()
 : fadeCardOut();
-    return(<div className="herosection">
+    return(<div className="herosection" id={props.name}>
                <div className="container" ref={props.name!=="home" ? sectionRef : null}>
                     <div className="container-flex__hero" style={{flexDirection: props.dir ? 'row' : 'row-reverse', alignContent: props.card.statu ? 'flex-start' : ''}}>
                            <TextBox 
