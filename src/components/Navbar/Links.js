@@ -29,7 +29,7 @@ function Links(props) {
                {links.map((item, index) => {
                   return(<li key={index} onClick={()=>{clickLink(item)}}>{item}<span></span></li>);  
                })  }
-               <li><Button info={{bg:'none'}} content="download cv" /></li>
+               <li><a href="./documents/aymanouch-cv.pdf" download="aymanouch-cv.pdf"><Button info={{bg:'none'}} content="download cv" /></a></li>
     </ul>)
 }
 export default Links;
